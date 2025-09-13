@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test Media Query</title>
+
+  <!-- CSS interne -->
   <style>
-    <link rel="stylesheet" href="style.css">
-    
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: lightblue; /* couleur par défaut */
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    /* Media query pour les écrans >= 768px */
+    @media (min-width: 768px) {
+      body {
+        background-color: lightgreen; /* couleur change sur grand écran */
+      }
+
+      h1 {
+        font-size: 3em;
+      }
+    }
   </style>
 </head>
 <body>
   <h1>Test Media Query</h1>
-  <p>Si l'écran est plus petit que 768px → le fond doit devenir ROUGE.</p>
+  <p>Change la taille de la fenêtre pour voir le fond et la taille du texte changer.</p>
 </body>
 </html>
